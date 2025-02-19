@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theorex AI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Automation Agency</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+      </head>
+      <body>
+        <!-- Header Section -->
+        <header class="sticky-navbar">
+          <div class="logo">Theorex AI Agency</div>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="#contact" class="ctabutton">Book a Free Consultation</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+          <div id="hero-animation"></div>
+          <div class="hero-content">
+            <h1>AI-Powered Automation for Your Business Growth</h1>
+            <p>
+              We build next-gen websites, AI agents, automation, and chatbots to
+              supercharge startups and small businesses.
+            </p>
+            <a href="#contact" class="cta_button cta-button"
+              >Book a Free Consultation</a
+            >
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <div class="portfolio_headline">
+          <h2>What We Offer</h2>
+        </div>
+        <section id="services">
+          <div class="service-grid">
+            <a href="scenery-scroll-animation.html" class="service-card">
+              <img src="web_dev.png" alt="Website Development" />
+              <h3>Website Development</h3>
+            </a>
+            <a href="aiagent.html" class="service-card">
+              <img src="ai_agent.png" alt="AI Agents" />
+              <h3>AI Agents</h3>
+            </a>
+            <a href="chatbotweb.html" class="service-card">
+              <img src="chatbot.png" alt="Chatbots" />
+              <h3>Chatbots</h3>
+            </a>
+          </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <div class="portfolio_headline">
+          <h2>Portfolio</h2>
+        </div>
+        <section id="portfolio" class="portfolio-section">
+          <div class="portfolio-wrapper">
+            <div class="portfolio-content">
+              <img
+                id="company-logo"
+                src="aw.png"
+                alt="Company Logo"
+                class="company-logo"
+              />
+              <h2 id="company-name">6omb AI</h2>
+              <p id="company-description">
+                Driving conversions and lower CPCs through broad match
+              </p>
+              <div class="metrics">
+                <div class="metric-box">
+                  <p><strong>128%</strong> Increase in website traffic</p>
+                </div>
+                <div class="metric-box">
+                  <p><strong>98%</strong> Increase in conversions</p>
+                </div>
+                <div class="metric-box">
+                  <p><strong>13%</strong> Lower CPCs</p>
+                </div>
+              </div>
+              <div class="client-logos">
+                <img
+                  src="6omb.jpeg"
+                  alt="Client 1"
+                  class="client-logo"
+                  onclick="changePortfolio(0)"
+                />
+                <img
+                  src="company2.png"
+                  alt="Client 2"
+                  class="client-logo"
+                  onclick="changePortfolio(1)"
+                />
+                <img
+                  src="aw.png"
+                  alt="Client 3"
+                  class="client-logo"
+                  onclick="changePortfolio(2)"
+                />
+                <img
+                  src="yinson.png"
+                  alt="Client 4"
+                  class="client-logo"
+                  onclick="changePortfolio(3)"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+          <h2 class="pricing-title">Choose Your Plan</h2>
+          <div class="pricing-container">
+            <div class="pricing-box">
+              <h3>Website Development</h3>
+              <p class="price">Starts from $500</p>
+              <p class="description">
+                Get a professional website tailored to your needs.
+              </p>
+              <a href="scenery-scroll-animation.html" class="pricing-button"
+                >Get Started</a
+              >
+            </div>
+            <div class="pricing-box">
+              <h3>Chatbot</h3>
+              <p class="price">Starts from $300</p>
+              <p class="description">
+                Enhance user engagement with a custom chatbot.
+              </p>
+              <a href="chatbotweb.html" class="pricing-button">Get Started</a>
+            </div>
+            <div class="pricing-box">
+              <h3>AI Agent</h3>
+              <p class="price">Starts from $750</p>
+              <p class="description">
+                Automate complex tasks with AI-powered agents.
+              </p>
+              <a href="aiagent.html" class="pricing-button">Get Started</a>
+            </div>
+            <div class="pricing-box contact-box">
+              <h3>Custom Solutions</h3>
+              <p class="price">Contact Sales</p>
+              <p class="description">
+                Get tailored solutions for your specific needs.
+              </p>
+              <a href="#" class="pricing-button">Contact Us</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+          <h2 class="contact-title">Let’s connect!</h2>
+          <div class="contact-section">
+            <div class="contact-circle"></div>
+            <!-- Blue Circle -->
+            <form class="contact-form">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Industry" />
+              <input type="text" placeholder="Phone Number" />
+              <input type="email" placeholder="Email" />
+              <textarea placeholder="Message"></textarea>
+              <button>Contact us</button>
+            </form>
+          </div>
+        </section>
+        <script>
+          document
+            .querySelector(".contact-form")
+            .addEventListener("submit", async function (event) {
+              event.preventDefault();
+
+              const formData = {
+                name: document.querySelector("input[placeholder='Name']").value,
+                industry: document.querySelector(
+                  "input[placeholder='Industry']"
+                ).value,
+                phone: document.querySelector(
+                  "input[placeholder='Phone Number']"
+                ).value,
+                email: document.querySelector("input[placeholder='Email']")
+                  .value,
+                message: document.querySelector(
+                  "textarea[placeholder='Message']"
+                ).value,
+              };
+
+              const response = await fetch("http://127.0.0.1:5000/submit", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+              });
+
+              const result = await response.json();
+              alert(result.message);
+            });
+        </script>
+
+        <script type="text/javascript">
+          (function (d, t) {
+            var v = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+            v.onload = function () {
+              window.voiceflow.chat.load({
+                verify: { projectID: "67acdb23397aee0aee416ada" },
+                url: "https://general-runtime.voiceflow.com",
+                versionID: "production",
+              });
+            };
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+            v.type = "text/javascript";
+            s.parentNode.insertBefore(v, s);
+          })(document, "script");
+        </script>
+      </body>
+    </html>
+  </head>
+</html>

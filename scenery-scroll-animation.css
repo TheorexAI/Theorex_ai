@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  position: fixed; /* Or absolute, depending on your layout */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Match the padding-top value */
+  background-color: #f0f0f0; /* Example background color */
+  z-index: 10; /* Ensure the header is on top */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  height: 10vh;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: rgb(5, 0, 0); /* Text color */
+  position: relative;
+  margin-top: 100px;
+  z-index: 9;
+}
+
+.hero-box {
+  display: inline-block; /* Ensures the box wraps tightly around the content */
+  padding: 20px; /* Adjust padding as needed */
+  border: 2px solid black; /* Black border */
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+}
+
+.hero-headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo {
+  color: #00d2ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #0099cc;
+  box-shadow: 0 5px 15px rgba(3, 131, 236, 0.4);
+}
+
+.consultation-btn {
+  background-color: #00d2ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-btn:hover {
+  background-color: #fafafa;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .consultation-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(74, 74, 74);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 205, 246);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.scrollElement {
+  position: absolute;
+  height: 6000px;
+  width: 100px;
+  top: 0;
+  z-index: 0;
+}
+
+.btn {
+  position: fixed;
+  bottom: 5%;
+  right: 0px;
+  transform: translateX(-50%);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.7em;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 11;
+}
+
+.btn_works {
+  left: 100px;
+  right: unset;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #1b1734;
+}
+
+.last-section {
+  color: #fff; /* Light text color for contrast */
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.last-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 2rem;
+  margin-top: 5000px;
+  margin-bottom: 30px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.features-list li {
+  margin-bottom: 15px;
+}
